@@ -51,13 +51,13 @@ section{
 	flex-direction: column;
 	align-items: center;
 
-	padding: 125px 100px;
+	padding: 50px 100px;
 }
 
 @media (max-width: 1000px){
 
 	section{
-		padding: 100px 50px;
+		padding: 50px 50px;
 	}
 
 }
@@ -65,14 +65,13 @@ section{
 @media (max-width: 600px){
 
 	section{
-		padding: 80px 30px;
+		padding: 40px 30px;
 	}
 
 }
 
 section h3.title{
-	color: #414a4f;
-	text-transform: capitalize; 
+	color: #414a4f; 
 	font: bold 32px 'Roboto', sans-serif;
 	margin-bottom: 35px;
 	text-align: center;
@@ -243,24 +242,29 @@ header nav li:last-child{
 	background-color: #333;
 }
 
+.our-work .grid li.third{
+	flex-basis: 33%;
+}
 .our-work .grid li.small{
 	flex-basis: 40%;
 }
-
 .our-work .grid li.large{
 	flex-basis: 60%;
+}
+.our-work .grid li.half{
+	flex-basis: 50%;
 }
 
 
 @media (max-width: 1000px){
 
 	.our-work .grid li.small,
+	.our-work .grid li.third,
+	.our-work .grid li.half,
 	.our-work .grid li.large{
 		flex-basis: 100%;
 	}
-
 }
-
 
 
 /*----------------------
@@ -293,6 +297,16 @@ header nav li:last-child{
     margin: 0;
 }
 
+.service-area-map {
+	max-width: 100%;
+	margin-top: 50px;
+}
+
+.service-area-map > iframe {
+	width: 640px;
+	height: 480px;
+}
+
 @media (max-width: 1000px){
 
 	.features .grid li{
@@ -304,6 +318,9 @@ header nav li:last-child{
 		margin-bottom: 0;
 	}
 
+	.service-area-map > iframe {
+		width: 540px;
+	}
 }
 
 
@@ -312,7 +329,9 @@ header nav li:last-child{
 	.features .grid li{
 		flex-basis: 100%;
 	}
-
+	.service-area-map > iframe {
+		max-width: 100%;
+	}
 }
 
 
