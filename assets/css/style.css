@@ -21,8 +21,15 @@ a{
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-
 	opacity: 0.9;
+}
+
+.text-link {
+	border-bottom: 2px solid;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 a:hover{
@@ -385,6 +392,23 @@ header nav li:last-child{
 	background-color: #f7f7f7;
 }
 
+.contact p {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.contact .grid li{
+	padding: 0 30px;
+	text-align: center;
+}
+
+.contact .grid li.contact-left{
+	flex-basis: 33%;
+}
+.contact .grid li.contact-right{
+	flex-basis: 67%;
+}
+
 .contact form{
 	display: flex;
 	align-items: center;
@@ -429,19 +453,19 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	color: #fff;
 	background-color: #414a4f;
 	padding: 60px 0;
 }
 
 footer ul{
 	display: flex;
-	margin-bottom: 25px;
-	font-size: 32px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: rgba(255,255,255,0.6);
 }
 
 footer ul li{
-	margin: 0 8px;	
+	margin: 0 20px;	
 }
 
 footer ul li:first-child{
@@ -452,28 +476,10 @@ footer ul li:last-child{
 	margin-right: 0;	
 }
 
-footer p{
-	text-transform: uppercase;
-	font-size: 14px;
-	color: rgba(255,255,255,0.6);
-	margin-bottom: 10px;
-}
-
-footer p a{
-	color: #fff;
-}
-
 @media (max-width: 700px){
 
 	footer{
 		padding: 80px 15px;
 	}
 
-}
-
-
-/* -- Demo ads -- */
-
-@media (max-width: 1200px) {
-	#bsaHolder{ display:none;}
 }
